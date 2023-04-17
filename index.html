@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="items">
+  <form id="pizza_size">
+    <h1>Pizza Order</h1>
+
+    <label for="size">Pizza Size:</label>
+    <div id="size">
+      <input type="radio" id="small" name="size" value="small">
+      <label for="small">Small</label>
+      <input type="radio" id="medium" name="size" value="medium">
+      <label for="medium">Medium</label>
+      <input type="radio" id="large" name="size" value="large">
+      <label for="large">Large</label>
+    </div>
+
+    <label for="toppings">Toppings:</label>
+    <select id="toppings" name="toppings">
+      <option value="0">No Toppings</option>
+      <option value="1">One Topping</option>
+      <option value="2">Two Toppings</option>
+    </select>
+
+    <button type="submit">Total price</button>
+  </form>
+
+  <p id="total"></p>
+
+  <script src="java.js"></script>
+</div>
+</body>
+</html>
